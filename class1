@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace trabalhoLP2
+{
+    internal class Quiz
+    {
+        public class QuizInfo {
+            public string respostaUser;
+            public string respostaOfi;
+            public static int pontuacao = 0;
+            public int i = 0;
+
+            int[] vetor_1 = new int[10];
+
+            public string P1
+            {
+                
+                Console.WriteLine("De onde é a invenção do chuveiro elétrico? (10 pontos)");
+                
+                Console.WriteLine("a - França");
+                Console.WriteLine("b - Austrália");
+                Console.WriteLine("c - Brasil");
+                Console.WriteLine("d - Rússia");
+
+                respostaUser = Console.ReadLine(); //le a resposta do usuario
+
+                if (respostaUser == 'c' || respostaUser == 'C'){
+                    pontuacao[i] += 10;
+                    Console.Write("Correto!");
+                }
+                
+                else {
+                    Console.Write("Incorreto!");
+                }
+            }
+
+        }
+    }
